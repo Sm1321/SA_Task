@@ -11,6 +11,7 @@ def load_data():
         employee_list = pd.read_csv('employee_list.csv')
         project_list = pd.read_csv('project_list.csv')
     else:
+        ###
         # Initialize default DataFrames if no CSV file found
         main_table = pd.DataFrame({
             'Week Day': [1, 1, 1, 2, 2],
@@ -37,7 +38,7 @@ def load_data():
 
     return main_table, employee_list, project_list
 
-# Function to save data to CSV
+#Function to save data to CSV
 #This will save the tables
 def save_data(main_table, employee_list, project_list):
     main_table.to_csv('main_table.csv', index=False)
@@ -48,6 +49,7 @@ def save_data(main_table, employee_list, project_list):
 # Load data (from CSV or default values)
 main_table, employee_list, project_list = load_data()
 
+##################################################################################################################################33
 # Streamlit App
 st.title("🏢Employee Work Tracker")
 
@@ -87,7 +89,7 @@ elif choice == "Add Details To Tables":
         else:
             st.sidebar.warning(f"Employee '{employee_name}' already exists!")
 
-    # Sidebar for adding a new project
+    # Sidebar for adding a new project Details
     st.sidebar.header("Add New Project")
     project_name = st.sidebar.text_input("Enter Project Name:")
     project_description = st.sidebar.text_input("Enter Project Description:")
@@ -112,7 +114,7 @@ elif choice == "Add Details To Tables":
         else:
             st.sidebar.warning(f"Project '{project_name}' already exists!")
 
-    # Sidebar for adding a new work entry
+    # Sidebar for adding a new work entry Details
     st.sidebar.header("Add Employee Work Details")
     employee_name_work = st.sidebar.text_input("Enter Employee Name for Work Entry:")
     project_name_work = st.sidebar.text_input("Enter Project Name for Work Entry:")
@@ -143,10 +145,8 @@ elif choice == "Utilization Analysis (O/P)":
         values='Time(in hours)'
     ).fillna(0)
 
-    # Flatten MultiIndex and rename columns (optional)
-    #output.columns = [f'{col}' for col in output.columns]
-    #output.reset_index(inplace=True)
-
+ 
+    ####################################33
     st.header("Output Table (Utilization Analysis)")
     st.dataframe(output)
 
