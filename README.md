@@ -24,8 +24,11 @@ Provides an option to download the utilization analysis table as a CSV.
 
 ## Infomation in the Tables
 - Main Table:
-  - Tracks employee work details (week, employee, project, time spent).
+  - Tracks employee work details
+  - (Number of week , employee, project, time spent(in hours per week).
 - Employee List:
-  - Includes employee name, position, skills, and current status.
+  - Includes the details
+  - (employee name, position, skills, and current status).
 - Project List:
-  - Includes project name, description, start date, expected duration, type (internal/external), and status.
+  - Includes the details 
+  - (project name, description, start date, expected duration, type (internal/external), and status).
