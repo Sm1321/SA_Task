@@ -4,6 +4,7 @@ import os
 
 
 # Function to load data from CSV or create new DataFrame
+#If condition excute if the CSV is Already Presents
 def load_data():
     if os.path.exists('main_table.csv'):
         # Load data from CSV if file exists
@@ -11,7 +12,7 @@ def load_data():
         employee_list = pd.read_csv('employee_list.csv')
         project_list = pd.read_csv('project_list.csv')
     else:
-        ###
+        ###if the Data/CSV Not Present Intially,it will execute
         # Initialize default DataFrames if no CSV file found
         main_table = pd.DataFrame({
             'Week Day': [1, 1, 1, 2, 2],
@@ -50,7 +51,7 @@ def save_data(main_table, employee_list, project_list):
 main_table, employee_list, project_list = load_data()
 
 ##################################################################################################################################33
-# Streamlit App
+# Streamlit Appication
 st.title("🏢Employee Work Tracker")
 
 # Selectbox to choose between adding details or viewing analysis
