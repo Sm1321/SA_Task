@@ -23,7 +23,7 @@ def load_data():
 
         employee_list = pd.DataFrame({
             'Name': ['Ram', 'Laxman', 'Charan'],
-            'Position': ['Manager', 'Developer', 'Analyst'],
+            'Position': ['Analyst', 'Developer', 'Analyst'],
             'Skills': ['Python,Excel', 'Java, SQL', 'R, Analytics'],
             'CurrentStatus': ['Active', 'Active', 'Active']
         })
@@ -52,7 +52,7 @@ main_table, employee_list, project_list = load_data()
 
 ##################################################################################################################################33
 # Streamlit Appication
-st.title("🏢Employee Work Tracker")
+st.title("🏢 Employee Work Tracker")
 
 # Selectbox to choose between adding details or viewing analysis
 choice = st.selectbox("Choose the action:", ["Task Tracker Table", "Add Details To Tables", "Utilization Analysis (O/P)"])
