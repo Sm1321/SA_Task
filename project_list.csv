@@ -1,0 +1,8 @@
+Project,Description,StartDate,Expected to Complete(Weeks),Internal/External,Status
+Project A,Analysis,2024-01-01,4,Internal,Active
+Project B,Development,2024-02-01,6,External,Completed
+Project C,Testing,2024-03-01,8,Internal,On Hold
+Project D,Reporting,2024-04-01,3,External,Active
+Project E,Design,2024-05-01,5,Internal,Active
+Project R,Devlopment,2024-11-27,3,Internal,Active
+Project M,Devlopment,2024-11-27,1,External,Active
