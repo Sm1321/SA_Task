@@ -59,7 +59,8 @@ choice = st.selectbox("Choose the action:", ["Task Tracker Table", "Add Details 
 
 if choice == "Task Tracker Table":
     # Display the 3 tables: Main Table, Employee List, Project List
-    st.header("Main Table")
+    #make the main table as ->Task Tracker Table
+    st.header("Task Tracker Table")
     st.dataframe(main_table)
 
     st.header("Employee List")
