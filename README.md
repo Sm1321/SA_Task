@@ -20,3 +20,12 @@
 ### Utilization Analysis:
 Generates a pivot table to visualize how much time each employee has spent on different projects.
 Provides an option to download the utilization analysis table as a CSV.
+
+
+## Infomation in the Tables
+- Main Table:
+  - Tracks employee work details (week, employee, project, time spent).
+- Employee List:
+  - Includes employee name, position, skills, and current status.
+- Project List:
+  - Includes project name, description, start date, expected duration, type (internal/external), and status.
