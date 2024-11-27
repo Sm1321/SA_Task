@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 numpy
->>>>>>> e6a168caab2152a0337c759920b697e03fa00a4b
 pandas
 streamlit
 python
