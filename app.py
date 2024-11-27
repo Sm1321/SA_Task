@@ -24,7 +24,7 @@ def load_data():
         employee_list = pd.DataFrame({
             'Name': ['Ram', 'Laxman', 'Charan'],
             'Position': ['Manager', 'Developer', 'Analyst'],
-            'Skills': ['Python, Excel', 'Java, SQL', 'R, Analytics'],
+            'Skills': ['Python,Excel', 'Java, SQL', 'R, Analytics'],
             'CurrentStatus': ['Active', 'Active', 'Active']
         })
 
